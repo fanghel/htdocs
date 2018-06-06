@@ -19,17 +19,23 @@
         <input type="text" name="surname" placeholder="Surname"><br><br>
         <input type="text" name="username" placeholder="Username"><br><br>
         <input type="password" name="password" placeholder="Password"><br><br>
-        <input type="submit" value="Sign up"> <br> <br>  
+        <input type="submit" value="Sign up"> <br><br>  
     <form>
 
-    <?php 
-        if (isset($_GET['info']) && $_GET['info'] == 'OK') {
-            echo '<p style="text-align:center;">The account has been created</p/>';
-        } else  if (isset($_GET['info']) && $_GET['info'] == 'ERROR') {
-            echo '<p style="text-align:center;">Please fill in all fields!</p/>';
-        } else  if (isset($_GET['info']) && $_GET['info'] == 'ACCOUNT_UNAVAILABLE') {
-            echo '<p style="text-align:center;">The username is not available!</p/>';
-        }
+    <?php
+    if (isset($_GET['info']))
+        $status = $_GET['info'];
+    else
+        return;
+    
+    $message = [
+        'OK'                  => "The account has been created!",
+        'ERROR'               => "Please fill in all fields!",
+        'ACCOUNT_UNAVAILABLE' => "The username is not available!"
+    ];
+    
+    echo "<p style='text-align:center;'>$message[$status]</p/>";
+    echo "<br/>";
     ?>
 </body>
 </html>
