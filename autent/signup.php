@@ -18,7 +18,7 @@
         <input type="text" name="nume" placeholder="Nume"><br><br>
         <input type="text" name="prenume" placeholder="Prenume"><br><br>
         <input type="text" name="username" placeholder="Username"><br><br>
-        <input type="password" name="password" placeholder="Parola"><br><br>
+        <input type="password" name="password" placeholder="Password"><br><br>
         <input type="submit" value="Sign up"> <br> <br>  
     <form>
 

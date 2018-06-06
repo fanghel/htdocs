@@ -18,7 +18,7 @@ if (!empty($_POST['nume']) && !empty($_POST['prenume']) && !empty($_POST['userna
         header("Location: ../signup.php?info=exista");
         die();
     } else  { 
-            $sql = "INSERT INTO users (nume, prenume, username, parola) VALUES ('$nume', '$prenume', '$username', '$password_hashed')";
+            $sql = "INSERT INTO users (nume, prenume, username, password) VALUES ('$nume', '$prenume', '$username', '$password_hashed')";
             $result = mysqli_query($conectare, $sql);
             header ("Location: ../signup.php?info=OK");
         }
