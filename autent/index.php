@@ -39,7 +39,7 @@
     <form>
     <?php
         if (isset($_GET['info']) && $_GET['info'] == 'gresit') {
-            echo 'Eroare la conectare';
+            echo 'Connection error!';
         }
     
     ?>
