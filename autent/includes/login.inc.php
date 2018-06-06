@@ -12,10 +12,10 @@ if (!empty($_POST['username']) && !empty($_POST['password']) &&  isset($_POST['u
     $row = $result->fetch_assoc();
     $hash = $row['password']; 
     
-    $check = password_verify($password, $hash);
-    if ($check == 0) {
+    $passwordMatches = password_verify($password, $hash);
+    if (!$passwordMatches) {
         // header("Location: ../index.php?info=LOGIN_FAILED");
-        echo "$check";
+        echo "The password is wrong!";
         die();
     }
     

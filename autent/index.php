@@ -35,6 +35,7 @@
         <input type="password" name="password" placeholder="Password"><br><br>
         <input type="submit" value="Log in">
     <form>
+    
     <?php
         if (isset($_GET['info']) && $_GET['info'] == 'LOGIN_FAILED') {
             echo 'Connection error!';
