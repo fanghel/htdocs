@@ -15,7 +15,7 @@ if (!empty($_POST['name']) && !empty($_POST['surname']) && !empty($_POST['userna
     $check = mysqli_num_rows($result);
     
     if ($check > 0) {
-        header("Location: ../signup.php?info=exista");
+        header("Location: ../signup.php?info=ACCOUNT_UNAVAILABLE");
         die();
     } else  { 
             $sql = "INSERT INTO users (name, surname, username, password) VALUES ('$name', '$surname', '$username', '$password_hashed')";
