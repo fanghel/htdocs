@@ -1,6 +1,6 @@
 <?php
 //session_start();
-require 'conectare.php';
+require 'connection.php';
 
 if (!empty($_POST['username']) && !empty($_POST['password']) &&  isset($_POST['username']) && isset($_POST['password'])) { 
     $username = strtolower($_POST['username']);
