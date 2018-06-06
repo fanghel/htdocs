@@ -11,7 +11,7 @@
 			
 			
 		<ul>
-			<li><a href="index.php">HOME</qa></li>
+			<li><a href="index.php">HOME</a></li>
 			<li><a href="signup.php"> SIGN UP</a></li>
 		</ul>
 			
