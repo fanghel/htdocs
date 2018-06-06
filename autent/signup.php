@@ -25,7 +25,7 @@
     <?php 
         if (isset($_GET['info']) && $_GET['info'] == 'OK') {
             echo '<p style="text-align:center;"> Contul a fost creat</p/>';
-        } else  if (isset($_GET['info']) && $_GET['info'] == 'EROARE') {
+        } else  if (isset($_GET['info']) && $_GET['info'] == 'ERROR') {
             echo '<p style="text-align:center;"> Eroare la completare!</p/>';
         } else  if (isset($_GET['info']) && $_GET['info'] == 'ACCOUNT_UNAVAILABLE') {
             echo '<p style="text-align:center;"> Acest username exista deja!</p/>';
