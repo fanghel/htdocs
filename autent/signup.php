@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document 1</title>
+	<title>Sign up form</title>
 </head>
 <body>
 	<img src="https://picsum.photos/200/150"
@@ -24,11 +24,11 @@
 
     <?php 
         if (isset($_GET['info']) && $_GET['info'] == 'OK') {
-            echo '<p style="text-align:center;"> Contul a fost creat</p/>';
+            echo '<p style="text-align:center;">The account has been created</p/>';
         } else  if (isset($_GET['info']) && $_GET['info'] == 'ERROR') {
-            echo '<p style="text-align:center;"> Eroare la completare!</p/>';
+            echo '<p style="text-align:center;">Please fill in all fields!</p/>';
         } else  if (isset($_GET['info']) && $_GET['info'] == 'ACCOUNT_UNAVAILABLE') {
-            echo '<p style="text-align:center;"> Acest username exista deja!</p/>';
+            echo '<p style="text-align:center;">The username is not available!</p/>';
         }
     ?>
 </body>
