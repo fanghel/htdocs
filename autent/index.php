@@ -31,7 +31,7 @@
     ?>
     
     
-    <h1>Bine ai venit!</h1>   
+    <h1>Welcome!</h1>   
     <form method="POST" action="includes/login.inc.php">
         <input type="text" name="username" placeholder="Username"><br><br>
         <input type="password" name="password" placeholder="Password"><br><br>
