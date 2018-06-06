@@ -17,7 +17,7 @@ if (!empty($_POST['username']) && !empty($_POST['password']) &&  isset($_POST['u
     $check = password_verify($password, $hash);
     echo "$check";
     if ($check == 0) {
-        //header("Location: ../index.php?info=gresit");
+        //header("Location: ../index.php?info=LOGIN_FAILED");
         echo "$check";
         die();
     } else {

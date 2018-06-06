@@ -38,7 +38,7 @@
         <input type="submit" value="Log in">
     <form>
     <?php
-        if (isset($_GET['info']) && $_GET['info'] == 'gresit') {
+        if (isset($_GET['info']) && $_GET['info'] == 'LOGIN_FAILED') {
             echo 'Connection error!';
         }
     
