@@ -1,10 +1,10 @@
 <?php
 require 'conectare.php';
 
-if (!empty($_POST['nume']) && !empty($_POST['prenume']) && !empty($_POST['username']) && !empty($_POST['password']) && isset($_POST['nume'])&& isset($_POST['prenume'])&& isset($_POST['username']) && isset($_POST['password'])) { 
+if (!empty($_POST['name']) && !empty($_POST['surname']) && !empty($_POST['username']) && !empty($_POST['password']) && isset($_POST['name'])&& isset($_POST['surname'])&& isset($_POST['username']) && isset($_POST['password'])) { 
 
-    $nume = $_POST['nume'];
-    $prenume = $_POST['prenume'];
+    $name = $_POST['name'];
+    $surname = $_POST['surname'];
     $username = strtolower($_POST['username']);
     $password = $_POST['password'];
 
@@ -18,7 +18,7 @@ if (!empty($_POST['nume']) && !empty($_POST['prenume']) && !empty($_POST['userna
         header("Location: ../signup.php?info=exista");
         die();
     } else  { 
-            $sql = "INSERT INTO users (nume, prenume, username, password) VALUES ('$nume', '$prenume', '$username', '$password_hashed')";
+            $sql = "INSERT INTO users (name, surname, username, password) VALUES ('$name', '$surname', '$username', '$password_hashed')";
             $result = mysqli_query($conectare, $sql);
             header ("Location: ../signup.php?info=OK");
         }

@@ -15,8 +15,8 @@
 
     <h1>Sign up!</h1> 
     <form method="POST" action="includes/signup.inc.php">
-        <input type="text" name="nume" placeholder="Nume"><br><br>
-        <input type="text" name="prenume" placeholder="Prenume"><br><br>
+        <input type="text" name="name" placeholder="Name"><br><br>
+        <input type="text" name="surname" placeholder="Surname"><br><br>
         <input type="text" name="username" placeholder="Username"><br><br>
         <input type="password" name="password" placeholder="Password"><br><br>
         <input type="submit" value="Sign up"> <br> <br>  
@@ -32,4 +32,4 @@
         }
     ?>
 </body>
-</html> 
+</html>
