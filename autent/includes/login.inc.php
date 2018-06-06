@@ -26,8 +26,8 @@ if (!empty($_POST['username']) && !empty($_POST['password']) &&  isset($_POST['u
         
         } else {
             $_SESSION['id'] = $row['id'];
-            $_SESSION['nume'] = $row['nume'];
-            $_SESSION['prenume'] = $row['prenume'];
+            $_SESSION['name'] = $row['name'];
+            $_SESSION['surname'] = $row['surname'];
             $_SESSION['username'] = $row['username'];
         }
         
