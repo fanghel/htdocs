@@ -5,7 +5,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Login</title>
 </head>
 <body>
     <img src="https://picsum.photos/200/150"
