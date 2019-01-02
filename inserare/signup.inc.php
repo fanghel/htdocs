@@ -1,5 +1,4 @@
 <?php
-
 require 'conectare.php';
 
 $username = $_POST['username'];
@@ -15,12 +14,11 @@ if ($result) {
     echo "<br/> Datele pentru $prenume $nume au fost introduse!";
 } else {
     echo "<br/> Eroare!!!";
-    
     $mysqlerror = mysqli_error($conectare);
     echo "<br/> The error from MySQL is: <br/> $mysqlerror";
 }
 
 mysqli_close($conectare);
 
-//header("Location: index.php");
+// header("Location: index.php");
 ?>

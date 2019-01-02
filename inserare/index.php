@@ -5,7 +5,7 @@
 <html lang = "en">
 <head>
     <meta charset = "UTF-8">
-    <title> Document </title>
+    <title>Inserare</title>
 </head>
 <body>
 
@@ -16,7 +16,7 @@
     <input type="text" name="nume" placeholder="Nume"><br><br>
     <input type="text" name="prenume" placeholder="Prenume"><br><br>
     <input type="submit" name="trimite" value="Trimite">
-</form>    
+</form>
 
 </body>
-</html>    
+</html>

@@ -6,10 +6,10 @@
 </head>
 <body>
     <img src="https://picsum.photos/200/150?lock=11">
-        <ul>
-            <li><a href="index.php">HOME</a></li>
-            <li><a href="signup.php">SIGN UP</a></li>
-        </ul>
+    <ul>
+        <li><a href="index.php">HOME</a></li>
+        <li><a href="signup.php">SIGN UP</a></li>
+    </ul>
 
     <h1>Sign up!</h1>
     <form method="POST" action="includes/signup.inc.php">
