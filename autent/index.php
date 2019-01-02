@@ -8,7 +8,7 @@
     <title>Login</title>
 </head>
 <body>
-    <img src="https://picsum.photos/200/150">
+    <img src="https://picsum.photos/200/150?lock=10">
         <ul>
             <li><a href="index.php">HOME</a></li>
             <?php

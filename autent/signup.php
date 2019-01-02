@@ -5,7 +5,7 @@
     <title>Sign up form</title>
 </head>
 <body>
-    <img src="https://picsum.photos/200/150">
+    <img src="https://picsum.photos/200/150?lock=11">
         <ul>
             <li><a href="index.php">HOME</a></li>
             <li><a href="signup.php">SIGN UP</a></li>
