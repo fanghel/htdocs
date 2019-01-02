@@ -17,8 +17,8 @@ if (!empty($_POST['username']) && !empty($_POST['password']) &&  isset($_POST['u
         header("Location: ../index.php?info=LOGIN_FAILED");
         die();
     } else {
-    	$_SESSION['id'] = $row['id'];
-  		$_SESSION['name'] = $row['name'];
+        $_SESSION['id'] = $row['id'];
+          $_SESSION['name'] = $row['name'];
         $_SESSION['surname'] = $row['surname'];
         $_SESSION['username'] = $row['username'];
        

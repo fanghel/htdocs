@@ -12,12 +12,12 @@ $sql = "INSERT INTO user (username, password, email, nume, prenume) VALUES ('$us
 
 $result = mysqli_query($conectare, $sql);
 if ($result) {
-	echo "<br/> Datele pentru $prenume $nume au fost introduse!";
+    echo "<br/> Datele pentru $prenume $nume au fost introduse!";
 } else {
-	echo "<br/> Eroare!!!";
-	
-	$mysqlerror = mysqli_error($conectare);
-	echo "<br/> The error from MySQL is: <br/> $mysqlerror";
+    echo "<br/> Eroare!!!";
+    
+    $mysqlerror = mysqli_error($conectare);
+    echo "<br/> The error from MySQL is: <br/> $mysqlerror";
 }
 
 mysqli_close($conectare);
