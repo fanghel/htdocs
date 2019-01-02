@@ -5,9 +5,7 @@
     <title>Sign up form</title>
 </head>
 <body>
-    <img src="https://picsum.photos/200/150"
-         width="200"
-         height="140">
+    <img src="https://picsum.photos/200/150">
         <ul>
             <li><a href="index.php">HOME</a></li>
             <li><a href="signup.php">SIGN UP</a></li>
