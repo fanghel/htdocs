@@ -27,9 +27,7 @@
    // if (isset($_SESSION['id'])) {
     //    echo 'Wellcome'.$_SESSION['prenume'];  
    // }
-    
     ?>
-    
     
     <h1>Welcome!</h1>   
     <form method="POST" action="includes/login.inc.php">
@@ -41,8 +39,6 @@
         if (isset($_GET['info']) && $_GET['info'] == 'LOGIN_FAILED') {
             echo 'Connection error!';
         }
-    
     ?>
-        
 </body>
 </html> 

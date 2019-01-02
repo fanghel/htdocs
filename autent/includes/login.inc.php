@@ -14,23 +14,21 @@ if (!empty($_POST['username']) && !empty($_POST['password']) &&  isset($_POST['u
     
     $check = password_verify($password, $hash);
     if ($check == 0) {
-        //header("Location: ../index.php?info=LOGIN_FAILED");
+        // header("Location: ../index.php?info=LOGIN_FAILED");
         echo "$check";
         die();
+    }
+    
+    $sql = "SELECT * FROM users WHERE username='$username' AND password='$hash'";
+    $result = mysqli_query($conectare, $sql);
+    
+    if (!$row = $result->fetch_assoc()) {
+        echo 'Wrong password!';
     } else {
-        $sql = "SELECT * FROM users WHERE username='$username' AND password='$hash'";
-        $result = mysqli_query($conectare, $sql);
-        
-        if (!$row = $result->fetch_assoc()) {
-            echo 'Wrong password!';
-        
-        } else {
-            $_SESSION['id'] = $row['id'];
-            $_SESSION['name'] = $row['name'];
-            $_SESSION['surname'] = $row['surname'];
-            $_SESSION['username'] = $row['username'];
-        }
-        
-     // header("Location: ../index.php");
-    }  
+        $_SESSION['id'] = $row['id'];
+        $_SESSION['name'] = $row['name'];
+        $_SESSION['surname'] = $row['surname'];
+        $_SESSION['username'] = $row['username'];
+    }
+    // header("Location: ../index.php");
 }
