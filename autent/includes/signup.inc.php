@@ -24,3 +24,4 @@ if (!empty($_POST['name']) && !empty($_POST['surname']) && !empty($_POST['userna
 } else {
     header ("Location: ../signup.php?info=ERROR");
 }
+?>

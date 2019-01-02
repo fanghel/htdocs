@@ -24,3 +24,4 @@ if (!empty($_POST['username']) && !empty($_POST['password']) &&  isset($_POST['u
 
     header("Location: ../index.php");
 }
+?>
