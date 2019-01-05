@@ -1,26 +1,22 @@
-<?php
-  
-  echo '<html>
-<head><title>Studiu PHP</title>
-<script language="JavaScript">
-function alertare () {
- alert("Esti hotarat sa inveti php?")
-}
-</script>
-</head> 
-<body onLoad="alertare()">
-<p>Un script PHP ce contine JavaScript</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Learning PHP</title>
+  <script type="text/javascript">
+    function askUser() {
+      alert("Are you ready to learn PHP?");
+    }
+  </script>
+</head>
+<body onLoad="askUser()">
+  <h1>Learning PHP</h1>
+  <?php
+    $student = 'Florin';
+    $surname = 'Anghel';
+    $forename = 'Florin';
+  ?>
+  <p>The student is <?= $student ?>.</p>
+  <p>My name is <?= "$forename $surname" ?> and I'm a student.</p>
 </body>
-</html>'; 
-
-$student = 'Florin';
-echo 'Acum studentul este '.$student.'<br>';
-$nume = 'Anghel';
-$prenume = 'Florin';
-echo ' Ma numesc '.$nume.' '.$prenume.' si sunt student. <br>'; 
-echo $prenume .'<br>' ;
-echo 25 .'<br>';
-
-define('MANCARE', 'branza');
-echo  MANCARE;
- ?>
+</html>
