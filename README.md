@@ -7,9 +7,9 @@ Just a quick and simple way to start learning and playing with PHP and web progr
 - [The PHP Official Manual](http://php.net/manual/en)
 
 ## PHP intermediate resources
+- [Model View Controller Design Pattern](https://en.wikipedia.org/wiki/Model–view–controller)
+- [Laravel PHP Framework with MVC support Video Tutorial](https://laracasts.com/series/laravel-from-scratch-2018)
+- [Laravel PHP Framework with MVC support](https://laravel.com)
 - [Highest voted PHP questions on Stackoverflow](https://stackoverflow.com/questions/tagged/php)
 - [PHP: The Right Way](https://phptherightway.com)
-- [Model View Controller Design Pattern](https://en.wikipedia.org/wiki/Model–view–controller)
-- [Laravel PHP Framework with MVC support](https://laravel.com)
-- [Laravel PHP Framework with MVC support Video Tutorial](https://laracasts.com/series/laravel-from-scratch-2018)
 - [YouTube: Build a Shopping Cart with PHP](https://www.youtube.com/playlist?list=PLfdtiltiRHWH9JN1NBpJRFUhN96KBfPmd)
