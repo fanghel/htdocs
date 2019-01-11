@@ -127,10 +127,7 @@
   // Foreach loops can iterate over arrays
   foreach ($wheels as $wheel_count) {
       echo $wheel_count;
-
-
-
-
+  }
 ?>
 </body>
 </html>
