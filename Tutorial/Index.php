@@ -125,9 +125,37 @@
   $wheels = ['bicycle' => 2, 'car' => 4];
 
   // Foreach loops can iterate over arrays
-  foreach ($wheels as $wheel_count) {
-      echo $wheel_count;
+  foreach ($wheels as $vehicle => $wheel_count) {
+    echo "A $vehicle has $wheel_count wheels.";
+    echo "\n";
   }
+  class Aritmetica {
+     var $x = 7;
+     var $y = 3;
+     function Suma() {
+        return $this -> x + $this -> y;
+     }
+     function Produs() { 
+        return $this -> x * $this -> y;
+        } 
+     }   
+  $rez = new Aritmetica;
+  $rez -> x = 12;
+  $rez -> y = 10;
+  echo "<br>";
+  echo $rez -> Suma();
+  echo "<br>";
+  echo $rez -> Produs();
+  $rez1 = new Aritmetica;
+  echo "<br>";
+  echo $rez1 -> Suma();
+  echo "<br>";
+  echo $rez1 -> Produs();
+
+
+
+
+
 ?>
 </body>
 </html>
