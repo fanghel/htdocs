@@ -1,7 +1,7 @@
 <?php
 require 'connection.php';
 
-if (!empty($_POST['name']) && !empty($_POST['surname']) && !empty($_POST['username']) && !empty($_POST['password']) && isset($_POST['name'])&& isset($_POST['surname'])&& isset($_POST['username']) && isset($_POST['password'])) {
+if (!empty($_POST['name']) && !empty($_POST['surname']) && !empty($_POST['username']) && !empty($_POST['password']) && isset($_POST['name'])&& isset($_POST['surname'])&& isset($_POST['username']) && isset($_POST['password']))  {
     $name = $_POST['name'];
     $surname = $_POST['surname'];
     $username = strtolower($_POST['username']);

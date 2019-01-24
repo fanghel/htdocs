@@ -106,12 +106,13 @@
   <p>The name of my friend is <?= $nume ?></p>
 
 <?php
-  $x = 0;
-  echo ($x ? 'Does not get printed.' : 'Does.') ."\n";
-
+  $x = 1;
+  echo ($x ? 'Does not get printed.' : 'Does.') ;
+  echo '<br><br>';
   $a = null;
-  $b = '  Scrie ce vrei';
-  echo $a ?? '  a is not set'; // prints 'a is not set'
+  $b = 'Scrie ce vrei tu';
+  echo $a ?? '  A is not set'; // prints 'a is not set'
+  echo '<br>';
   echo $b ?? '  b is not set'; // prints 'Does print'
   ?>
 
@@ -151,11 +152,20 @@
   echo $rez1 -> Suma();
   echo "<br>";
   echo $rez1 -> Produs();
-
-
-
-
-
 ?>
+  <div id="top">
+
+  <h1>Chocolate curry</h1>
+  
+  <p class="intro">This is my recipe for making curry purely with chocolate</p>
+  
+  <p class="intro">Mmm mm mmmmm</p>
+  
+  </div>
+
+
+
+  
+
 </body>
 </html>
